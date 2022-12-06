@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDisplayImage1.a  CMakeFiles/DisplayImage1.dir/test.cpp.o
+/usr/bin/ranlib libDisplayImage1.a
