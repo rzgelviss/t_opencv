@@ -70,8 +70,8 @@ install/strip/fast: preinstall/fast
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -169,32 +169,32 @@ test/fast:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-test_histogram_calculation.o: test_histogram_calculation.cpp.o
+test_meanshift.o: test_meanshift.cpp.o
 
-.PHONY : test_histogram_calculation.o
+.PHONY : test_meanshift.o
 
 # target to build an object file
-test_histogram_calculation.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test_histogram_calculation.cpp.o
-.PHONY : test_histogram_calculation.cpp.o
+test_meanshift.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test_meanshift.cpp.o
+.PHONY : test_meanshift.cpp.o
 
-test_histogram_calculation.i: test_histogram_calculation.cpp.i
+test_meanshift.i: test_meanshift.cpp.i
 
-.PHONY : test_histogram_calculation.i
+.PHONY : test_meanshift.i
 
 # target to preprocess a source file
-test_histogram_calculation.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test_histogram_calculation.cpp.i
-.PHONY : test_histogram_calculation.cpp.i
+test_meanshift.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test_meanshift.cpp.i
+.PHONY : test_meanshift.cpp.i
 
-test_histogram_calculation.s: test_histogram_calculation.cpp.s
+test_meanshift.s: test_meanshift.cpp.s
 
-.PHONY : test_histogram_calculation.s
+.PHONY : test_meanshift.s
 
 # target to generate assembly for a file
-test_histogram_calculation.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test_histogram_calculation.cpp.s
-.PHONY : test_histogram_calculation.cpp.s
+test_meanshift.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test_meanshift.cpp.s
+.PHONY : test_meanshift.cpp.s
 
 # Help Target
 help:
@@ -209,9 +209,9 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... install"
-	@echo "... test_histogram_calculation.o"
-	@echo "... test_histogram_calculation.i"
-	@echo "... test_histogram_calculation.s"
+	@echo "... test_meanshift.o"
+	@echo "... test_meanshift.i"
+	@echo "... test_meanshift.s"
 .PHONY : help
 
 

@@ -9,7 +9,7 @@ int bins = 25;
 void Hist_and_Backproj(int, void* );
 int main( int argc, char* argv[] )
 {
-    CommandLineParser parser( argc, argv, "{@input |  | input image}" );
+    CommandLineParser parser( argc, argv, "{@input |../a.jpg  | input image}" );
     Mat src = imread( parser.get<String>( "@input" ) );
     if( src.empty() )
     {

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test.dir/test_histogram_calculation.cpp.o"
+  "CMakeFiles/test.dir/test_meanshift.cpp.o"
   "test.pdb"
   "test"
 )

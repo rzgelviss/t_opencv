@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/twc/cproject/t_opencv/test_histogram_calculation.cpp" "/home/twc/cproject/t_opencv/build/CMakeFiles/test.dir/test_histogram_calculation.cpp.o"
+  "/home/twc/cproject/t_opencv/test_meanshift.cpp" "/home/twc/cproject/t_opencv/build/CMakeFiles/test.dir/test_meanshift.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
